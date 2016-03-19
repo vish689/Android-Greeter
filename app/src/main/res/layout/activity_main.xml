@@ -9,8 +9,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="in.pvishnu.greeter.MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_text_hint"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerInParent="true"
+        android:text = "@string/button_label"
+        android:onClick="greet"/>
 </RelativeLayout>
